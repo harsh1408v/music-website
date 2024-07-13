@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full w-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Music - Tune into Quality</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': { 'min': '320px', 'max': '480px' },
+                    // => @media (min-width: 640px and max-width: 767px) { ... }
+
+                    'md': { 'min': '481px', 'max': '1024px' },
+                    // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+                    'lg': { 'min': '1025px' },
+                },
+            }
+        }
+    </script>
+</head>
+
+<body class="h-full w-full">
+    <main class=" relative h-full w-full">
+
+        <!-- page-1 desktop screen -->
+        <section
+            class="h-full relative z-[99] w-full  bg-[url('cdn/page1.png')] bg-no-repeat bg-cover bg-center sm:hidden md:hidden ">
+            <nav class="w-full bg-transparent h-[5vw] p-[2vw] ">
+                <div
+                    class="flex justify-between px-[2.5vw] py-[1.5vw] rounded-[1vw] items-center backdrop-blur-[30px] shadow-[0px_0px_30px_rgba(227,228,237,0.37)] border-[1.5px] border-[rgba(255,255,255,0.18)]">
+                    <div class="flex items-center text-white gap-[2vw]">
+                        <img src="cdn/logo.png" alt="">
+                        <h3 class="pt-[0.5vw] font-[700] text-[1.4vw]">Guitars</h3>
+                        <h3 class="pt-[0.5vw] font-[700] text-[1.4vw]">Accessories</h3>
+                        <h3 class="pt-[0.5vw] font-[700] text-[1.4vw]">Storage</h3>
+                        <h3 class="pt-[0.5vw] font-[700] text-[1.4vw]">Lessons</h3>
+                        <h3 class="pt-[0.5vw] font-[700] text-[1.4vw]">Repairs</h3>
+                    </div>
+                    <div class="flex items-center text-white text-[1.5vw] gap-[1.5vw]">
+                        <i class="ri-shopping-cart-line"></i>
+                        <i class="ri-user-line"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-white text-[4vw] font-[700] mt-[4vw] p-[3.5vw]">
+                <p>Fullfilling dreams <br> with strings <br> attached</p>
+            </div>
+        </section>
+
+        <!-- page-1 tablet screen -->
+        <section
+            class="h-full relative z-[99] w-full  bg-[url('cdn/tabBG.png')] bg-no-repeat bg-cover bg-center sm:hidden lg:hidden ">
+            <nav class="w-full bg-transparent h-[5vw] p-[5vw] ">
+                <div
+                    class="px-[2.5vw] py-[2.5vw] rounded-[3vw] items-center backdrop-blur-[30px] shadow-[0px_0px_30px_rgba(227,228,237,0.37)] border-[1.5px] border-[rgba(255,255,255,0.18)]">
+                    <div class="flex items-center justify-between text-white gap-[20vw]">
+                        <img src="cdn/tabLogo.png" alt="" height="40px" width="255px">
+                        <i class="ri-menu-line text-[5vw]"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-white text-[8vw] font-[700] flex items-center mt-[40vw] pl-[5vw]">
+                <p>Fullfilling <br> dreams with <br> strings attached</p>
+            </div>
+
+            <!-- mid tablet screen -->
+            <div
+                class="absolute z-[100] bg-[url('cdn/tab-part.png')] bg-center bg-cover bg-mo-repeat h-auto w-[96%] text-center text-white top-[91.5%] left-[2%] px-[5vw] rounded-xl sm:hidden lg:hidden">
+                <h1 class="text-[3.5vw] font-bold mt-[2vw]">FREE GUITAR LESSONS!</h1>
+                <p class="text-[1.8vw] font-semibold mt-[2vw]">Purchase any guitar over $499.99 and receive <br>a
+                    one-hour
+                    guitar lesson free.</p>
+                <button
+                    class="uppercase bg-[#FF753A] text-[2vw] rounded-[3vw] mt-[2vw] mb-[2vw] font-semibold py-[1vw] px-[2vw]">learn
+                    more</button>
+            </div>
+        </section>
+
+        <!-- page-1 mobile screen -->
+        <section
+            class="w-full h-auto relative z-[99] bg-[url('cdn/mob-bg.png')] bg-no-repeat bg-center bg-cover text-center md:hidden lg:hidden">
+            <nav class="px-[7vw] py-[6vw]">
+                <div
+                    class="flex justify-between items-center px-[4vw] py-[5vw] rounded-[4vw] text-white backdrop-blur-[30px] shadow-[0px_0px_30px_rgba(227,228,237,0.37)] border-[1.5px] border-[rgba(255,255,255,0.18)]">
+                    <img src="cdn/mob-logo.png" alt="" height="auto" width="50%">
+                    <i class="ri-menu-line text-2xl"></i>
+                </div>
+            </nav>
+            <h1 class="text-4xl text-white font-bold pb-[60vw] pt-[18vw]">Fullfilling <br>dreams with <br>strings
+                attached</h1>
+            <div
+                class="absolute z-[100] bg-[url('cdn/mob-part.png')] bg-center bg-cover bg-mo-repeat h-auto w-[90%] text-center text-white top-[84%] left-[5%] rounded-xl md:hidden lg:hidden">
+                <h1 class="text-2xl font-bold pt-[4vw] ">FREE GUITAR <br> LESSONS!</h1>
+                <p class="text-xs font-semibold pt-[2vw]">Purchase any guitar over $499.99 and receive <br>a one-hour
+                    guitar lesson free.</p>
+                <button
+                    class="uppercase bg-orange-500 px-[4vw] py-[1.8vw] my-[4vw] text-[3vw] font-semibold rounded-3xl">learn
+                    more</button>
+            </div>
+        </section>
+
+        <!-- mid desktop screen -->
+        <div
+            class="absolute z-[100] w-[100%] rounded-[3vw] text-white top-[80%] bg-[url('cdn/Mobile.png')] bg-no-repeat bg-fit bg-center p-[2vw] text-center sm:hidden md:hidden">
+            <h1 class="text-[3vw] font-[700]">FREE GUITAR LESSONS!</h1>
+            <h2 class="text-[1.2vw] font-[700]">Purchase any guitar over $499.99 and receive <br> one-hour guitar lesson
+                free. </h2>
+            <button class="bg-[#FF753A] text-white px-[2vw] rounded-[3vw] py-[1vw] mt-[1vw]">Learn More</button>
+        </div>
+
+        <!-- page-2 desktop screen -->
+        <section class="mt-[12vw] h-[42vw] w-full sm:hidden md:hidden">
+            <div class="flex justify-center">
+                <div class="h-[3px] w-[5vw] bg-[#ab0433]"></div>
+            </div>
+            <h2 class="text-center text-[3vw] font-[700]">New Products</h2>
+            <div class="flex justify-between px-[7vw] mt-[4vw]">
+                <div class="">
+                    <div class="h-[27vw] w-[25vw] border rounded-[1vw] bg-white shadow-lg">
+                        <img src="cdn/guiter1.png" class="object-cover object-center" alt="Guiter Image" />
+                        <div class="flex justify-between px-[2vw] pt-[1vw] pb-[0.5vw] font-bold">
+                            <h3>
+                                Brand Name
+                            </h3>
+                            <h3>$2,995</h3>
+                        </div>
+                        <h4 class="font-normal text-[rgb(109,108,108)] px-[2vw] pb-[1vw]">
+                            Product description here
+                        </h4>
+                        <div class="flex gap-[1vw] items-center px-[2vw] py-[1vw]">
+                            <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="h-[27vw] w-[25vw] border rounded-[1vw] bg-white shadow-lg">
+                        <img src="cdn/guiter2.png" class="object-cover object-center" alt="Guiter Image" />
+                        <div class="flex justify-between px-[2vw] pt-[1vw] pb-[0.5vw] font-bold">
+                            <h3>
+                                Brand Name
+                            </h3>
+                            <h3>$2,995</h3>
+                        </div>
+                        <h4 class="font-normal text-[rgb(109,108,108)] px-[2vw] pb-[1vw]">
+                            Product description here
+                        </h4>
+                        <div class="flex gap-[1vw] items-center px-[2vw] py-[1vw]">
+                            <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="h-[27vw] w-[25vw] border rounded-[1vw] bg-white shadow-lg">
+                        <img src="cdn/guiter3.png" class="object-cover object-center" alt="Guiter Image" />
+                        <div class="flex justify-between px-[2vw] pt-[1vw] pb-[0.5vw] font-bold">
+                            <h3>
+                                Brand Name
+                            </h3>
+                            <h3>$2,995</h3>
+                        </div>
+                        <h4 class="font-normal text-[rgb(109,108,108)] px-[2vw] pb-[1vw]">
+                            Product description here
+                        </h4>
+                        <div class="flex gap-[1vw] items-center px-[2vw] py-[1vw]">
+                            <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page-2 tablet screen -->
+        <section class="mt-[17vw] w-full sm:hidden lg:hidden">
+            <div class="flex justify-center">
+                <div class="h-[3px] w-[9vw] bg-[#ab0433]"></div>
+            </div>
+            <h2 class="text-center text-[5vw] mt-[1vw] font-[700]">New Products</h2>
+
+            <div class="flex justify-between px-[5vw] mt-[4vw]">
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabGuitar1.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="flex justify-between px-[3vw] pt-[1vw] pb-[0.5vw] font-bold">
+                        <h3>
+                            Brand Name
+                        </h3>
+                        <h3>$2,995</h3>
+                    </div>
+                    <h4 class="font-[500] text-[rgb(109,108,108)] px-[3vw] pt-[.5vw] pb-[2vw]">
+                        Product description here
+                    </h4>
+                    <div class="flex gap-[1vw] items-center px-[3vw] py-[1.5vw] mb-[1.5vw]">
+                        <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                    </div>
+                </div>
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabGuitar2.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="flex justify-between px-[3vw] pt-[1vw] pb-[0.5vw] font-bold">
+                        <h3>
+                            Brand Name
+                        </h3>
+                        <h3>$2,995</h3>
+                    </div>
+                    <h4 class="font-[500] text-[rgb(109,108,108)] px-[3vw] pt-[.5vw] pb-[2vw]">
+                        Product description here
+                    </h4>
+                    <div class="flex gap-[1vw] items-center px-[3vw] py-[1.5vw] mb-[1.5vw]">
+                        <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between px-[5vw] mt-[4vw]">
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabGuitar3.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="flex justify-between px-[3vw] pt-[1vw] pb-[0.5vw] font-bold">
+                        <h3>
+                            Brand Name
+                        </h3>
+                        <h3>$2,995</h3>
+                    </div>
+                    <h4 class="font-[500] text-[rgb(109,108,108)] px-[3vw] pt-[.5vw] pb-[2vw]">
+                        Product description here
+                    </h4>
+                    <div class="flex gap-[1vw] items-center px-[3vw] py-[1.5vw] mb-[1.5vw]">
+                        <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                    </div>
+                </div>
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabGuitar4.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="flex justify-between px-[3vw] pt-[1vw] pb-[0.5vw] font-bold">
+                        <h3>
+                            Brand Name
+                        </h3>
+                        <h3>$2,995</h3>
+                    </div>
+                    <h4 class="font-[500] text-[rgb(109,108,108)] px-[3vw] pt-[.5vw] pb-[2vw]">
+                        Product description here
+                    </h4>
+                    <div class="flex gap-[1vw] items-center px-[3vw] py-[1.5vw] mb-[1.5vw]">
+                        <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page-2 mobile screen -->
+        <section class="mt-[40vw] flex items-center flex-col w-full h-auto py-[10vw] md:hidden lg:hidden">
+            <div class="flex justify-center">
+                <div class="h-[5px] w-[20vw] bg-[#ab0433] "></div>
+            </div>
+            <h2 class="text-center text-[7vw] font-[700]">New Products</h2>
+            <div class="grid gap-[8vw]">
+                <div class="rounded-xl shadow-lg pb-[4vw]">
+                    <img src="cdn/mob-page2-img1.png" alt="">
+                    <div class="flex justify-between font-bold text-xl px-[5vw] pt-[4vw]">
+                        <h1>Brand Name</h1>
+                        <h1>$2,995</h1>
+                    </div>
+                    <p class="font-semibold text-gray-600 px-[5vw] pt-[2vw]">Product description here</p>
+                    <div class="flex items-center gap-[1.4vw] border px-[2vw] mt-[4vw] mx-[5vw] w-fit rounded-xl">
+                        <h1 class="font-bold">0</h1>
+                        <p class="font-light text-sm">colors available</p>
+                    </div>
+                </div>
+                <div class="rounded-xl shadow-lg pb-[4vw]">
+                    <img src="cdn/mob-page2-img2.png" alt="">
+                    <div class="flex justify-between font-bold text-xl px-[5vw] pt-[4vw]">
+                        <h1>Brand Name</h1>
+                        <h1>$2,995</h1>
+                    </div>
+                    <p class="font-semibold text-gray-600 px-[5vw] pt-[2vw]">Product description here</p>
+                    <div class="flex items-center gap-[1.4vw] border px-[2vw] mt-[4vw] mx-[5vw] w-fit rounded-xl">
+                        <h1 class="font-bold">0</h1>
+                        <p class="font-light text-sm">colors available</p>
+                    </div>
+                </div>
+                <div class="rounded-xl shadow-lg pb-[4vw]">
+                    <img src="cdn/mob-page2-img3.png" alt="">
+                    <div class="flex justify-between font-bold text-xl px-[5vw] pt-[4vw]">
+                        <h1>Brand Name</h1>
+                        <h1>$2,995</h1>
+                    </div>
+                    <p class="font-semibold text-gray-600 px-[5vw] pt-[2vw]">Product description here</p>
+                    <div class="flex items-center gap-[1.4vw] border px-[2vw] mt-[4vw] mx-[5vw] w-fit rounded-xl">
+                        <h1 class="font-bold">0</h1>
+                        <p class="font-light text-sm">colors available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page-3 desktop screen -->
+        <section class="h-[47vw] w-full  bg-[#ECECEC] sm:hidden md:hidden">
+            <div class="flex justify-center ">
+                <div class="h-[3px] mt-[5vw] w-[5vw] bg-[#ab0433] "></div>
+            </div>
+            <h2 class="text-center text-[3vw] font-[700]">Popular Finds</h2>
+            <div class="flex justify-between px-[7vw] mt-[4vw]">
+                <div class="">
+                    <div class="h-[27vw] w-[25vw] border rounded-[1vw] bg-white shadow-lg">
+                        <img src="cdn/product1.png" class="object-cover object-center" alt="Guiter Image" />
+                        <div class="flex justify-between px-[2vw] pt-[1vw] pb-[0.5vw] font-bold">
+                            <h3>
+                                Brand Name
+                            </h3>
+                            <h3>$2,995</h3>
+                        </div>
+                        <h4 class="font-normal text-[rgb(109,108,108)] px-[2vw] pb-[1vw]">
+                            Product description here
+                        </h4>
+                        <div class="flex gap-[1vw] items-center px-[2vw] py-[1vw]">
+                            <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="h-[27vw] w-[25vw] border rounded-[1vw] bg-white shadow-lg">
+                        <img src="cdn/product2.png" class="object-cover object-center" alt="Guiter Image" />
+                        <div class="flex justify-between px-[2vw] pt-[1vw] pb-[0.5vw] font-bold">
+                            <h3>
+                                Brand Name
+                            </h3>
+                            <h3>$2,995</h3>
+                        </div>
+                        <h4 class="font-normal text-[rgb(109,108,108)] px-[2vw] pb-[1vw]">
+                            Product description here
+                        </h4>
+                        <div class="flex gap-[1vw] items-center px-[2vw] py-[1vw]">
+                            <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="h-[27vw] w-[25vw] border rounded-[1vw] bg-white shadow-lg">
+                        <img src="cdn/product3.png" class="object-cover object-center" alt="Guiter Image" />
+                        <div class="flex justify-between px-[2vw] pt-[1vw] pb-[0.5vw] font-bold">
+                            <h3>
+                                Brand Name
+                            </h3>
+                            <h3>$2,995</h3>
+                        </div>
+                        <h4 class="font-normal text-[rgb(109,108,108)] px-[2vw] pb-[1vw]">
+                            Product description here
+                        </h4>
+                        <div class="flex gap-[1vw] items-center px-[2vw] py-[1vw]">
+                            <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page-3 tablet screen -->
+        <section class="w-full pb-[8vw] mt-[8vw] bg-[#ECECEC] sm:hidden lg:hidden">
+            <div class="flex justify-center ">
+                <div class="h-[3px] mt-[7vw] w-[9vw] bg-[#ab0433]"></div>
+            </div>
+            <h2 class="text-center text-[5vw] mt-[1vw] font-[700]">Popular Finds</h2>
+
+            <div class="flex justify-between px-[5vw] mt-[4vw]">
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabProduct1.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="flex justify-between px-[3vw] pt-[1vw] pb-[0.5vw] font-bold">
+                        <h3>
+                            Brand Name
+                        </h3>
+                        <h3>$2,995</h3>
+                    </div>
+                    <h4 class="font-[500] text-[rgb(109,108,108)] px-[3vw] pt-[.5vw] pb-[2vw]">
+                        Product description here
+                    </h4>
+                    <div class="flex gap-[1vw] items-center px-[3vw] py-[1.5vw] mb-[1.5vw]">
+                        <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                    </div>
+                </div>
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabProduct2.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="flex justify-between px-[3vw] pt-[1vw] pb-[0.5vw] font-bold">
+                        <h3>
+                            Brand Name
+                        </h3>
+                        <h3>$2,995</h3>
+                    </div>
+                    <h4 class="font-[500] text-[rgb(109,108,108)] px-[3vw] pt-[.5vw] pb-[2vw]">
+                        Product description here
+                    </h4>
+                    <div class="flex gap-[1vw] items-center px-[3vw] py-[1.5vw] mb-[1.5vw]">
+                        <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between px-[5vw] mt-[4vw]">
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabProduct3.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="flex justify-between px-[3vw] pt-[1vw] pb-[0.5vw] font-bold">
+                        <h3>
+                            Brand Name
+                        </h3>
+                        <h3>$2,995</h3>
+                    </div>
+                    <h4 class="font-[500] text-[rgb(109,108,108)] px-[3vw] pt-[.5vw] pb-[2vw]">
+                        Product description here
+                    </h4>
+                    <div class="flex gap-[1vw] items-center px-[3vw] py-[1.5vw] mb-[1.5vw]">
+                        <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                    </div>
+                </div>
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabProduct4.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="flex justify-between px-[3vw] pt-[1vw] pb-[0.5vw] font-bold">
+                        <h3>
+                            Brand Name
+                        </h3>
+                        <h3>$2,995</h3>
+                    </div>
+                    <h4 class="font-[500] text-[rgb(109,108,108)] px-[3vw] pt-[.5vw] pb-[2vw]">
+                        Product description here
+                    </h4>
+                    <div class="flex gap-[1vw] items-center px-[3vw] py-[1.5vw] mb-[1.5vw]">
+                        <h4 class=""><span class="font-bold">0</span> colors available</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page-3 mobile screen -->
+        <section class="w-full h-auto md:hidden lg:hidden bg-[#ECECEC] flex items-center flex-col py-[10vw]">
+            <div class="flex justify-center">
+                <div class="h-[5px] w-[20vw] bg-[#ab0433] "></div>
+            </div>
+            <h2 class="text-center text-[7vw] font-[700]">Popular Finds</h2>
+            <div class="grid gap-[8vw] py-[7vw]">
+                <div class="rounded-xl shadow-lg pb-[4vw] bg-white">
+                    <img src="cdn/mob-page3-img1.png" alt="">
+                    <div class="flex justify-between font-bold text-xl px-[5vw] pt-[4vw]">
+                        <h1>Brand Name</h1>
+                        <h1>$2,995</h1>
+                    </div>
+                    <p class="font-semibold text-gray-600 px-[5vw] pt-[2vw]">Product description here</p>
+                    <div class="flex items-center gap-[1.4vw] border px-[2vw] mt-[4vw] mx-[5vw] w-fit rounded-xl">
+                        <h1 class="font-bold">0</h1>
+                        <p class="font-light text-sm">colors available</p>
+                    </div>
+                </div>
+                <div class="rounded-xl shadow-lg pb-[4vw] bg-white">
+                    <img src="cdn/mob-page3-img2.png" alt="">
+                    <div class="flex justify-between font-bold text-xl px-[5vw] pt-[4vw]">
+                        <h1>Brand Name</h1>
+                        <h1>$2,995</h1>
+                    </div>
+                    <p class="font-semibold text-gray-600 px-[5vw] pt-[2vw]">Product description here</p>
+                    <div class="flex items-center gap-[1.4vw] border px-[2vw] mt-[4vw] mx-[5vw] w-fit rounded-xl">
+                        <h1 class="font-bold">0</h1>
+                        <p class="font-light text-sm">colors available</p>
+                    </div>
+                </div>
+                <div class="rounded-xl shadow-lg pb-[4vw] bg-white">
+                    <img src="cdn/mob-page3-img3.png" alt="">
+                    <div class="flex justify-between font-bold text-xl px-[5vw] pt-[4vw]">
+                        <h1>Brand Name</h1>
+                        <h1>$2,995</h1>
+                    </div>
+                    <p class="font-semibold text-gray-600 px-[5vw] pt-[2vw]">Product description here</p>
+                    <div class="flex items-center gap-[1.4vw] border px-[2vw] mt-[4vw] mx-[5vw] w-fit rounded-xl">
+                        <h1 class="font-bold">0</h1>
+                        <p class="font-light text-sm">colors available</p>
+                    </div>
+                </div>
+                <div class="rounded-xl shadow-lg pb-[4vw] bg-white">
+                    <img src="cdn/mob-page3-img4.png" alt="">
+                    <div class="flex justify-between font-bold text-xl px-[5vw] pt-[4vw]">
+                        <h1>Brand Name</h1>
+                        <h1>$2,995</h1>
+                    </div>
+                    <p class="font-semibold text-gray-600 px-[5vw] pt-[2vw]">Product description here</p>
+                    <div class="flex items-center gap-[1.4vw] border px-[2vw] mt-[4vw] mx-[5vw] w-fit rounded-xl">
+                        <h1 class="font-bold">0</h1>
+                        <p class="font-light text-sm">colors available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page-4 desktop screen -->
+        <section class="h-[80vw] w-full sm:hidden md:hidden">
+            <div class="flex justify-center ">
+                <div class="h-[3px] mt-[5vw] w-[5vw] bg-[#ab0433] "></div>
+            </div>
+            <h2 class="text-center text-[3vw] font-[700]">Gear Heads</h2>
+            <div class="pl-[7vw] pr-[7vw] mt-[3vw] flex justify-between gap-[3vw]">
+                <div class="h-[37vw] w-[36vw] border-[2px] rounded-[0.7vw] bg-[#252525] text-[white] shadow-2xl">
+                    <img src="cdn/GH1.png" class="object-cover object-center" height="487px" width="616px"
+                        alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[2.2vw] ">
+                        <h3 class="font-bold text-[1.7vw]">Article Title</h3>
+                        <h3 class="mt-[.7vw]">Article Subhead</h3>
+                    </div>
+                </div>
+                <div class="h-[37vw] w-[36vw] border-[2px] rounded-[0.7vw] bg-[#ECECEC]  shadow-2xl">
+                    <img src="cdn/GH2.png" class="object-cover object-center" height="487px" width="616px"
+                        alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[2.2vw] ">
+                        <h3 class="font-bold text-[1.7vw]">Article Title</h3>
+                        <h3 class="mt-[.7vw]">Article Subhead</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pl-[7vw] pr-[7vw] mt-[3vw] flex justify-between">
+                <div class="h-[36vw] w-[23.6vw] border-[2px] rounded-[0.85vw] bg-[#252525] text-[white] shadow-2xl">
+                    <img src="cdn/GH3.png" class="object-cover object-center" height="480px" width="400px"
+                        alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[1.5vw] ">
+                        <h3 class="font-bold text-[1.7vw]">Article Title</h3>
+                        <h3 class="mt-[.7vw]">Article Subhead</h3>
+                    </div>
+                </div>
+                <div class="h-[36vw] w-[23.6vw] border-[2px] rounded-[0.85vw] bg-[#ECECEC] shadow-2xl">
+                    <img src="cdn/GH4.png" class="object-cover object-center" height="480px" width="400px"
+                        alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[1.5vw] ">
+                        <h3 class="font-bold text-[1.7vw]">Article Title</h3>
+                        <h3 class="mt-[.7vw]">Article Subhead</h3>
+                    </div>
+                </div>
+                <div class="h-[36vw] w-[23.6vw] border-[2px] rounded-[0.85vw] bg-[#252525] text-[white] shadow-2xl">
+                    <img src="cdn/GH5.png" class="object-cover object-center" height="480px" width="400px"
+                        alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[1.5vw] ">
+                        <h3 class="font-bold text-[1.7vw]">Article Title</h3>
+                        <h3 class="mt-[.7vw]">Article Subhead</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page-4 tablet screen -->
+        <section class="w-full sm:hidden lg:hidden">
+            <div class="flex justify-center ">
+                <div class="h-[3px] mt-[7vw] w-[9vw] bg-[#ab0433]"></div>
+            </div>
+            <h2 class="text-center text-[5vw] mt-[1vw] font-[700]">Gear Heads</h2>
+
+            <div class="flex justify-between px-[5vw] mt-[4vw]">
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-[#252525] text-white shadow-lg">
+                    <img src="cdn/tabGH1.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[2.2vw] pb-[3vw]">
+                        <h3 class="font-bold text-[3vw]">Article Title</h3>
+                        <h3 class="mt-[1vw] text-[2vw]">Article Subhead</h3>
+                    </div>
+                </div>
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabGH2.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[2.2vw] pb-[3vw]">
+                        <h3 class="font-bold text-[3vw]">Article Title</h3>
+                        <h3 class="mt-[1vw] text-[2vw]">Article Subhead</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between px-[5vw] mt-[4vw]">
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-white shadow-lg">
+                    <img src="cdn/tabGH3.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[2.2vw] pb-[3vw]">
+                        <h3 class="font-bold text-[3vw]">Article Title</h3>
+                        <h3 class="mt-[1vw] text-[2vw]">Article Subhead</h3>
+                    </div>
+                </div>
+                <div class="h-auto w-[40vw] border rounded-[1vw] bg-[#252525] text-white shadow-lg">
+                    <img src="cdn/tabGH4.png" height="100%" width="100%" class="object-cover object-center" alt="Guiter Image" />
+                    <div class="px-[2vw] pt-[2.2vw] pb-[3vw]">
+                        <h3 class="font-bold text-[3vw]">Article Title</h3>
+                        <h3 class="mt-[1vw] text-[2vw]">Article Subhead</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page-4 mobile screen -->
+        <section class="w-full h-auto md:hidden lg:hidden flex items-center flex-col py-[10vw]">
+            <div class="flex justify-center">
+                <div class="h-[5px] w-[20vw] bg-[#ab0433] "></div>
+            </div>
+            <h2 class="text-center text-[7vw] font-[700]">Gear Heads</h2>
+            <div class="grid gap-[10vw] py-[8vw]">
+                <div class="bg-[#EAEAEA] rounded-xl shadow-md">
+                    <img src="cdn/mob-page4-img1.png" alt="">
+                    <h1 class="font-extrabold text-[6vw] pt-[5vw] pl-[6vw]">Article Title</h1>
+                    <p class="font-semibold text-[#767676] pt-[1vw] pb-[8vw] pl-[6vw]">Article Subhead</p>
+                </div>
+                <div class="bg-[#252525] rounded-xl shadow-md">
+                    <img src="cdn/mob-page4-img2.png" alt="">
+                    <h1 class="font-extrabold text-[6vw] text-white pt-[5vw] pl-[6vw]">Article Title</h1>
+                    <p class="font-semibold text-[#C4C4C4] pt-[1vw] pb-[8vw] pl-[6vw]">Article Subhead</p>
+                </div>
+                <div class="bg-[#EAEAEA] rounded-xl shadow-md">
+                    <img src="cdn/mob-page4-img3.png" alt="">
+                    <h1 class="font-extrabold text-[6vw] pt-[5vw] pl-[6vw]">Article Title</h1>
+                    <p class="font-semibold text-[#767676] pt-[1vw] pb-[8vw] pl-[6vw]">Article Subhead</p>
+                </div>
+                <div class="bg-[#252525] rounded-xl shadow-md">
+                    <img src="cdn/mob-page4-img4.png" alt="">
+                    <h1 class="font-extrabold text-[6vw] text-white pt-[5vw] pl-[6vw]">Article Title</h1>
+                    <p class="font-semibold text-[#C4C4C4] pt-[1vw] pb-[8vw] pl-[6vw]">Article Subhead</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer desktop screen -->
+        <footer class="h-[22vw] w-full mt-[15vw] bg-[#505050] sm:hidden md:hidden">
+            <div class="flex justify-between">
+                <div class="flex">
+                    <div class="pt-[5vw]">
+                        <div class="pl-[7vw] ">
+                            <div class="h-[4px] w-[5vw] bg-white "></div>
+                        </div>
+                        <div class="pl-[7vw]  text-white mt-[1vw] ">
+                            <h3 class="leading-[2.5vw] font-bold text-[1.3vw]">My Account</h3>
+                            <h3 class="leading-[2.5vw]">Overview</h3>
+                            <h3 class="leading-[2.5vw]">Order History</h3>
+                            <h3 class="leading-[2.5vw]">Wishlist</h3>
+                            <h3 class="leading-[2.5vw]">Account Information</h3>
+                        </div>
+                    </div>
+                    <div class="pt-[5vw]">
+                        <div class="pl-[7vw] pr-[7vw] ">
+                            <div class="h-[4px] w-[5vw] bg-white "></div>
+                        </div>
+                        <div class="pl-[7vw] pr-[7vw] text-white mt-[1vw] ">
+                            <h3 class="leading-[2.5vw] font-bold text-[1.3vw]">Store</h3>
+                            <h3 class="leading-[2.5vw]">Security Notice</h3>
+                            <h3 class="leading-[2.5vw]">Location & Hours</h3>
+                            <h3 class="leading-[2.5vw]">Rentals</h3>
+                            <h3 class="leading-[2.5vw]">Privacy Notice</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-[4.5vw] mt-[12vw]">
+                    <img src="cdn/logo.png" alt="">
+                    <div class="flex gap-[1vw] mt-[2vw] justify-end">
+                        <img src="cdn/Vector1.png" alt="">
+                        <img src="cdn/Vector2.png" alt="">
+                        <img src="cdn/Vector3.png" alt="">
+                        <img src="cdn/Vector4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer tablet screen -->
+        <footer class="h-[auto] w-full mt-[7vw] pb-[5vw] bg-[#505050] sm:hidden lg:hidden">
+            <div class="flex justify-between">
+                <div class="flex ">
+                    <div class="pt-[5vw]">
+                        <div class="pl-[7vw] ">
+                            <div class="h-[4px] w-[7vw] bg-white "></div>
+                        </div>
+                        <div class="pl-[7vw] text-white mt-[1vw] ">
+                            <h3 class="leading-[4vw] font-bold text-[2.5vw]">My Account</h3>
+                            <h3 class="leading-[4vw] text-[2vw]">Overview</h3>
+                            <h3 class="leading-[4vw] text-[2vw]">Order History</h3>
+                            <h3 class="leading-[4vw] text-[2vw]">Wishlist</h3>
+                            <h3 class="leading-[4vw] text-[2vw]">Account Information</h3>
+                        </div>
+                    </div>
+                    <div class="pt-[5vw]">
+                        <div class="pl-[7vw] ">
+                            <div class="h-[4px] w-[7vw] bg-white "></div>
+                        </div>
+                        <div class="pl-[7vw] text-white mt-[1vw] ">
+                            <h3 class="leading-[4vw] font-bold text-[2.5vw]">Store</h3>
+                            <h3 class="leading-[4vw] text-[2vw]">Security Notice</h3>
+                            <h3 class="leading-[4vw] text-[2vw]">Location & Hours</h3>
+                            <h3 class="leading-[4vw] text-[2vw]">Rentals</h3>
+                            <h3 class="leading-[4vw] text-[2vw]">Privacy Notice</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-[4.5vw] flex flex-col-reverse items-end" >
+                    
+                    <div class="flex gap-[1vw] mt-[3vw] mb-[2vw] justify-end">
+                        <img src="cdn/tabVector1.png" alt="">
+                        <img src="cdn/tabVector2.png" alt="">
+                        <img src="cdn/tabVector3.png" alt="">
+                        <img src="cdn/tabVector4.png" alt="">
+                    </div>
+                    <img src="cdn/tabLogo.png" alt="">
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer mobile screen -->
+        <footer
+            class="w-full h-auto bg-[#505050] flex flex-col items-center gap-[2.5vw] text-white text-center md:hidden lg:hidden">
+            <div class="w-[20vw] h-[4px] bg-white mt-[8vw]"></div>
+            <h1 class="font-bold">My Account</h1>
+            <h1>Overview</h1>
+            <h1>Order History</h1>
+            <h1>Whishlist</h1>
+            <h1>Account Information</h1>
+            <div class="flex gap-[3vw] items-center my-[3vw]">
+                <img src="cdn/mobV1.png" alt="">
+                <img src="cdn/mobV2.png" alt="">
+                <img src="cdn/mobV3.png" alt="">
+                <img src="cdn/mobV4.png" alt="">
+            </div>
+        </footer>
+
+        <!-- copyright desktop screen -->
+        <div class="bg-[#252525] h-[3vw] w-full pl-[7vw] text-white flex items-center text-[1.2vw] sm:hidden md:hidden">
+            <p>© 2024 Music Store X <span class="font-['Playwrite_GB_S',_cursive]">Harsh Chovatiya</span></p>
+        </div>
+
+        <!-- copyright tablet screen -->
+        <div class="bg-[#252525] h-[7vw] w-full pl-[7vw] text-white flex items-center text-[2.3vw] sm:hidden lg:hidden">
+            <p>© 2024 Music Store X <span class="font-['Playwrite_GB_S',_cursive]">Harsh Chovatiya</span></p>
+        </div>
+
+        <!-- copyright mobile screen -->
+        <div class="text-sm bg-[#252525] py-[2.2vw] text-center text-white inline-block w-full md:hidden lg:hidden">
+            <p>© 2024 Music Store X <span class="font-['Playwrite_GB_S',_cursive]">Harsh Chovatiya</span></p>
+        </div>
+    </main>
+</body>
+
+</html>
